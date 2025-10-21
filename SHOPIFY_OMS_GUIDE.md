@@ -77,14 +77,16 @@ DELETE /api/orders/:id
 
 ## 🛠️ Configuration
 
-Your Shopify credentials are configured in `backend/.env`:
+Your Shopify credentials are configured in `backend/.env`. See `backend/.env.example` for the required keys:
 
 ```env
-SHOPIFY_API_KEY=YOUR_API_KEY
-SHOPIFY_API_PASSWORD=YOUR_API_PASSWORD
-SHOPIFY_STORE_NAME=cc-oms-dev
+SHOPIFY_API_KEY=your_api_key
+SHOPIFY_API_PASSWORD=your_api_password
+SHOPIFY_STORE_NAME=your_store_name
 SHOPIFY_API_VERSION=2025-10
 ```
+
+**Note:** Never commit your `.env` file with real credentials. Use `.env.example` as a template.
 
 ## 📁 Project Structure
 
@@ -160,9 +162,11 @@ Express Server (port 3001)
 ## 🔐 Authentication
 
 The backend uses **Basic Authentication** to connect to Shopify:
-- API Key: `YOUR_API_KEY`
-- API Password: `YOUR_API_PASSWORD`
-- Store: `cc-oms-dev.myshopify.com`
+- API Key: Configured in `backend/.env`
+- API Password: Configured in `backend/.env`
+- Store: Configured in `backend/.env`
+
+See `backend/.env.example` for required configuration keys.
 
 ## 📊 Database
 

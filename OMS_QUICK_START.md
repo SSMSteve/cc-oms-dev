@@ -52,13 +52,16 @@ Visit: **http://localhost:5173**
 
 ## 📊 Shopify Integration
 
-Your OMS is connected to your Shopify store with these credentials:
+Your OMS is connected to your Shopify store. Configure your credentials in `backend/.env`:
 
+```env
+SHOPIFY_STORE_NAME=your_store_name
+SHOPIFY_API_KEY=your_api_key
+SHOPIFY_API_PASSWORD=your_api_password
+SHOPIFY_API_VERSION=2025-10
 ```
-Store: cc-oms-dev.myshopify.com
-API Key: YOUR_API_KEY
-API Version: 2025-10
-```
+
+See `backend/.env.example` for the template.
 
 ### What It Can Do
 
